@@ -1,7 +1,7 @@
 import numpy as np
 from matplotlib import pyplot as plt
 
-def plot_graph(cities, state, Title = 'Путь комвояжёра до оптимизации'):
+def plot_graph(cities, state, Title = 'Путь коммивояжера до оптимизации'):  # Отрисуем путь коммивояжера между городами
     cities_np = np.array(cities)
     
     fig, ax = plt.subplots(figsize = (10,10))
@@ -16,7 +16,7 @@ def plot_graph(cities, state, Title = 'Путь комвояжёра до опт
     plt.legend()
     plt.show()
     
-def plot_hist(E_hist, T_hist):
+def plot_hist(E_hist, T_hist): # Отрисуем изменение энергии и температуры в процессе оптимизации
 
     fig1, ax1 = plt.subplots()
     fig2, ax2 = plt.subplots()
